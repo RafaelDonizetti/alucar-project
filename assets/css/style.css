@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Inter&family=Poppins&family=Roboto:ital,wght@0,100;0,700;1,300&display=swap");
+:root {
+  --backgroundBusca: #313638;
+  --butaoBuscar: #ef6461;
+  --botaoAlugar: #e4b363;
+  --botaoNav: #e0dfd5;
+  --contecao: 70%;
+  --font: "Inter", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: var(--font);
+}
+
+.corpo {
+  width: 100%;
+  height: 100vh;
+}
+
+.cabecalho {
+  width: 100%;
+  height: 4.625rem;
+  box-shadow: 0px 4px 20px 2px #00000030;
+  display: flex;
+  justify-content: center;
+}
+
+.navegacao-cabecalho {
+  width: var(--contecao);
+  display: flex;
+  justify-content: space-between;
+}
+.logo-btn {
+  background: none;
+}
+
+.logo-btn > a {
+  font-size: 2rem;
+  color: var(--butaoBuscar);
+}
+.lista-itens {
+  display: flex;
+  align-items: center;
+  gap: 2.0625rem;
+}
+
+.lista-itens > li a {
+  padding: 0.625rem;
+  background: var(--botaoNav);
+  color: var(--backgroundBusca);
+  font-size: 1.25;
+  border-radius: 0.25rem;
+}
+
+.conteudo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.aprensentação-site {
+  height: 100vh;
+  width: var(--contecao);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+.lado-esquerdo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+}
+.texto {
+  font-size: 30px;
+  width: 70%;
+}
+.destaque-text {
+  color: var(--butaoBuscar);
+}
+
+.btn-alugar {
+  width: 50%;
+  height: 52px;
+  border-radius: 8px;
+  background: var(--botaoAlugar);
+  color: var(--backgroundBusca);
+  font-size: 30px;
+  box-shadow: 1px 2px 10px #00000052;
+}
+
+.lado-direito {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.busca {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.box-busca {
+  background: var(--backgroundBusca);
+  width: var(--contecao);
+  height: 500px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+}
+
+.inputs-labels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: var(--contecao);
+  gap: 20px;
+}
+.inputs-labels > div {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  height: 50px;
+  border-radius: 4px;
+}
+input::placeholder {
+  padding-left: 10px;
+}
+
+label {
+  color: #fff;
+  padding-bottom: 10px;
+}
+.btn-buscar {
+  width: var(--contecao);
+  height: 50px;
+  border-radius: 50px;
+  background: var(--butaoBuscar);
+  color: #fff;
+  font-size: 26px;
+}
+.dropdown {
+  display: none;
+}
